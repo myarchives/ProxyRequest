@@ -85,7 +85,7 @@ class ProxyRequest
         $this->_con = null;
     }
 
-    function _adjust_format($header, $response)
+    private function _adjust_format($header, $response)
     {
         $body   = $response;
         $datas = array(
