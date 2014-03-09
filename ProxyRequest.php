@@ -57,6 +57,8 @@ class ProxyRequest
         curl_setopt($this->_con, CURLOPT_RETURNTRANSFER, true);
 
         $response = curl_exec($this->_con);
+        echo $this->_url . "\n";
+
         $retry_count = 0;
         while (empty($response))
         {
